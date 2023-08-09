@@ -13,6 +13,17 @@ if not lspkind_status then
   return
 end
 
+-- Đặt background trong suốt cho NeoVim
+vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
+vim.cmd("hi SignColumn guibg=NONE ctermbg=NONE")
+vim.cmd("hi NormalNC guibg=NONE ctermbg=NONE")
+
+-- Đặt background trong suốt cho thanh bên của NeoVim Tree
+vim.cmd("hi NvimTreeNormal guibg=NONE ctermbg=NONE")
+vim.cmd("hi NvimTreeVertSplit guibg=NONE ctermbg=NONE")
+vim.cmd("hi NvimTreeStatusline guibg=NONE ctermbg=NONE")
+vim.cmd("hi NvimTreeEndOfBuffer guibg=NONE ctermbg=NONE")
+
 -- Tải các snippets giống như trong vs-code từ các plugin (ví dụ: friendly-snippets)
 require('luasnip/loaders/from_vscode').lazy_load()
 
