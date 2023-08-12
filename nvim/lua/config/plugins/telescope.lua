@@ -15,7 +15,7 @@ telescope.setup({
       i = {
         ['<C-k>'] = actions.move_selection_previous, -- di chuyển đến kết quả trước đó
         ['<C-j>'] = actions.move_selection_next, -- di chuyển đến kết quả tiếp theo
-        ['<C-q>'] = actions.send_selected_to_qflist + actions.open_qflist, -- gửi các kết quả đã chọn vào quickfixlist
+        ['<C-q>'] = actions.send_selected_to_qflist + actions.open_qflist, 
       },
     },
   },

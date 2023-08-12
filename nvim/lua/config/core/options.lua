@@ -1,4 +1,4 @@
-local opt = vim.opt -- để viết ngắn gọn
+local opt = vim.opt --for concisenss
 
 -- Hiển thị số dòng
 opt.relativenumber = true -- hiển thị số dòng tương đối
@@ -11,7 +11,7 @@ opt.expandtab = true -- thay thế tab bằng dấu cách
 opt.autoindent = true -- sao chép thụt lề từ dòng hiện tại khi bắt đầu dòng mới
 
 -- Không xuống dòng tự động
-opt.wrap = false -- tắt tự động xuống dòng
+opt.wrap = true -- tắt tự động xuống dòng
 
 -- Cài đặt tìm kiếm
 opt.ignorecase = true -- tìm kiếm không phân biệt chữ hoa/thường
@@ -37,4 +37,3 @@ opt.splitright = true -- chia cửa sổ theo hướng dọc bên phải
 opt.splitbelow = true -- chia cửa sổ theo hướng ngang ở phía dưới
 
 opt.iskeyword:append("-") -- xem chuỗi-ký tự như một từ nguyên
-
