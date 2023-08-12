@@ -28,12 +28,14 @@ keymap.set('n', '<leader>tx', ':tabclose<CR>') -- đóng tab hiện tại
 keymap.set('n', '<leader>tn', ':tabn<CR>') -- chuyển đến tab tiếp theo
 keymap.set('n', '<leader>tp', ':tabp<CR>') -- chuyển đến tab trước đó
 
+
 ----------------------
 -- Phím tắt cho Plugin
 ----------------------
 
 -- nvim-tree
 keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>') -- chuyển đổi trình duyệt tập tin
+
 
 -- telescope
 keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<cr>') -- tìm tập tin trong thư mục làm việc hiện tại, tôn trọng .gitignore
@@ -44,4 +46,3 @@ keymap.set('n', '<leader>fh', '<cmd>Telescope help_tags<cr>') -- liệt kê các
 
 -- khởi động lại lsp server
 keymap.set('n', '<leader>rs', ':LspRestart<CR>') -- phím tắt để khởi động lại lsp nếu cần thiết
-

@@ -30,13 +30,13 @@ end
 return packer.startup(function(use)
 	-- packer có thể quản lý chính nó
 	use("wbthomason/packer.nvim")
-
 	use("nvim-lua/plenary.nvim")
 
-	--	use("bluz71/vim-nightfly-guicolors") -- chủ đề màu ưa thích
+	-- theme
 	use({ "catppuccin/nvim", as = "catppuccin" })
 
-	use("christoomey/vim-tmux-navigator") -- điều hướng tmux & cửa sổ chia
+	-- điều hướng tmux & cửa sổ chia
+	use("christoomey/vim-tmux-navigator")
 
 	-- Plugin cần thiết
 	use("tpope/vim-surround") -- thêm, xóa, thay đổi các phần bao quanh
@@ -48,15 +48,15 @@ return packer.startup(function(use)
 	-- File Explorer
 	use("nvim-tree/nvim-tree.lua")
 
-	-- Icons giống như vscode
+	-- Icons
 	use("nvim-tree/nvim-web-devicons")
 
 	-- Statusline
 	use("nvim-lualine/lualine.nvim")
 
 	-- Tìm kiếm mờ hóa với telescope
-	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- phụ thuộc cho hiệu năng sắp xếp tốt hơn
-	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- tìm kiếm mờ hóa
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
 
 	-- Tự động hoàn thành
 	use("hrsh7th/nvim-cmp") -- plugin hoàn thành

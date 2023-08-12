@@ -1,4 +1,3 @@
--- Nhúng plugin lualine một cách an toàn
 local status, lualine = pcall(require, 'lualine')
 if not status then
   return
